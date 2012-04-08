@@ -1,0 +1,34 @@
+<Project DefaultTargets="CI"
+    xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	
+	<PropertyGroup>
+		<OutputPath>..\bin\</OutputPath>
+	</PropertyGroup>
+	
+	<Target Name="CI">
+        <CallTarget Targets="clean"/>
+		<CallTarget Targets="lib"/>
+		<CallTarget Targets="build"/>
+    </Target>
+	
+	<Target Name="lib">
+		<Copy SourceFiles="c:/lib/Aspose.Imaging.dll" DestinationFiles="lib/Aspose.Imaging.dll"></Copy>
+		<Copy SourceFiles="c:/lib/SimplePsd.dll" DestinationFiles="lib/SimplePsd.dll"></Copy>
+		<Copy SourceFiles="c:/lib/Newtonsoft.Json.NET4.dll" DestinationFiles="lib/Newtonsoft.Json.dll"></Copy>
+	</Target>
+	
+	<Target Name="clean" >
+		<RemoveDir Directories="bin" />
+		<RemoveDir Directories="test" />
+		<RemoveDir Directories="out" />
+		<RemoveDir Directories="lib" />
+		<RemoveDir Directories="src\obj" />
+		<RemoveDir Directories="src\bin" />
+	</Target>
+	
+    <Target Name="build" >
+		<MSBuild Projects="src\DesktopClient.sln" Properties="Configuration=Release;
+		Architecture=x86;OutputPath=$(OutputPath)"/>
+	</Target>
+  
+</Project>

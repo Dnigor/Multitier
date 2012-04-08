@@ -1,0 +1,15 @@
+<Project DefaultTargets="ci"
+    xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<Target Name="ci">
+		<MSBuild Projects="aclient/aclient.proj" Targets="ci" />
+		<MSBuild Projects="apps/server.proj" Targets="ci" />
+		<MSBuild Projects="mclient/mclient.proj" Targets="ci" />
+		<MSBuild Projects="wclient/wclient.proj" Targets="ci" />
+	</Target>
+	<Target Name="clean">
+		<MSBuild Projects="apps/server.proj" Targets="clean" />
+		<MSBuild Projects="aclient/aclient.proj" Targets="clean" />
+		<MSBuild Projects="mclient/mclient.proj" Targets="clean" />
+		<MSBuild Projects="wclient/wclient.proj" Targets="clean" />
+	</Target>	
+</Project>

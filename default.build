@@ -1,0 +1,12 @@
+<project default="ci">
+	<target name="ci">
+		<nant>
+			<buildfiles>
+				<include name="aclient/aclient.build" />
+				<include name="apps/server.build" />
+			<!--	<include name="mclient/mclient.build" />  -->
+				<include name="wclient/wclient.build" />
+			</buildfiles>
+		</nant>
+	</target>
+</project>

@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="2b88c27b-7b5b-43c2-a7d0-f8ff3998147a" name="Igor Starodynov@IGORSTARODYNOV 2012-04-05 10:08:44" runUser="IgorStarodynov\Igor Starodynov" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="12d77f06-14f5-47b2-8e32-736f99c240b8">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Igor Starodynov_IGORSTARODYNOV 2012-04-05 10_08_44">
+      <DeploymentItem filename="D:\Documents\Dropbox\Education\Visual Studio 2010\Projects\Multitier Project\apps\lib\DesktopClient.exe" />
+      <DeploymentItem filename="D:\Documents\Dropbox\Education\Visual Studio 2010\Projects\Multitier Project\apps\src\ApplicationServer\bin\Debug\ApplicationServer.exe" />
+      <DeploymentItem filename="D:\Documents\Dropbox\Education\Visual Studio 2010\Projects\Multitier Project\apps\src\ORM\bin\Debug\ORM.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-04-05T10:08:44.1908088+03:00" queuing="2012-04-05T10:08:44.7978435+03:00" start="2012-04-05T10:08:45.4448805+03:00" finish="2012-04-05T10:08:49.9291370+03:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="4" executed="4" passed="3" error="1" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <DebugTrace>Listener: Exception maessage. A blocking operation was interrupted by a call to WSACancelBlockingCall
+</DebugTrace>
+    </Output>
+    <RunInfos>
+      <RunInfo computerName="IGORSTARODYNOV" outcome="Error" timestamp="2012-04-05T10:08:48.5300570+03:00">
+        <Text>One of the background threads threw exception: 
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'System.Net.Sockets.Socket'.
+   at System.Net.Sockets.Socket.get_LocalEndPoint()
+   at System.Net.Sockets.TcpListener.get_LocalEndpoint()
+   at ApplicationServer.Listener.Run(Object state) in D:\Documents\Dropbox\Education\Visual Studio 2010\Projects\Multitier Project\apps\src\ApplicationServer\Listener.cs:line 40
+   at System.Threading.QueueUserWorkItemCallback.WaitCallback_Context(Object state)
+   at System.Threading.ExecutionContext.runTryCode(Object userData)
+   at System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean ignoreSyncCtx)
+   at System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
+   at System.Threading.ThreadPoolWorkQueue.Dispatch()
+   at System.Threading._ThreadPoolWaitCallback.PerformWaitCallback()</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="ServerWrongPort" storage="d:\documents\dropbox\education\visual studio 2010\projects\multitier project\apps\src\testproject\bin\debug\testproject.dll" id="cb01a2ba-6540-0c04-dd7d-8bea215d8576">
+      <Execution id="3601b524-c1e6-441b-a002-cfaa70355b9e" />
+      <TestMethod codeBase="D:/Documents/Dropbox/Education/Visual Studio 2010/Projects/Multitier Project/apps/src/TestProject/bin/Debug/TestProject.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject.UnitTest, TestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ServerWrongPort" />
+    </UnitTest>
+    <UnitTest name="ListenerAddClient" storage="d:\documents\dropbox\education\visual studio 2010\projects\multitier project\apps\src\testproject\bin\debug\testproject.dll" id="9a00b1a9-240d-1b14-bd6f-57549208136b">
+      <Execution id="2959a425-7800-4e08-9cef-fcf1cba2762a" />
+      <TestMethod codeBase="D:/Documents/Dropbox/Education/Visual Studio 2010/Projects/Multitier Project/apps/src/TestProject/bin/Debug/TestProject.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject.UnitTest, TestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ListenerAddClient" />
+    </UnitTest>
+    <UnitTest name="ServerTest" storage="d:\documents\dropbox\education\visual studio 2010\projects\multitier project\apps\src\testproject\bin\debug\testproject.dll" id="61f64de3-c180-b7d0-3089-accbd958bae0">
+      <Execution id="49a2ef5f-569b-4672-bdf5-7efa63374e6e" />
+      <TestMethod codeBase="D:/Documents/Dropbox/Education/Visual Studio 2010/Projects/Multitier Project/apps/src/TestProject/bin/Debug/TestProject.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject.UnitTest, TestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ServerTest" />
+    </UnitTest>
+    <UnitTest name="AddClientConnect" storage="d:\documents\dropbox\education\visual studio 2010\projects\multitier project\apps\src\testproject\bin\debug\testproject.dll" id="578e7c75-d692-1d0e-3f5f-a27b3bee43a5">
+      <Execution id="539c9ff2-a824-414c-b007-0f9a7d895168" />
+      <TestMethod codeBase="D:/Documents/Dropbox/Education/Visual Studio 2010/Projects/Multitier Project/apps/src/TestProject/bin/Debug/TestProject.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject.UnitTest, TestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AddClientConnect" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="578e7c75-d692-1d0e-3f5f-a27b3bee43a5" executionId="539c9ff2-a824-414c-b007-0f9a7d895168" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="61f64de3-c180-b7d0-3089-accbd958bae0" executionId="49a2ef5f-569b-4672-bdf5-7efa63374e6e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9a00b1a9-240d-1b14-bd6f-57549208136b" executionId="2959a425-7800-4e08-9cef-fcf1cba2762a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cb01a2ba-6540-0c04-dd7d-8bea215d8576" executionId="3601b524-c1e6-441b-a002-cfaa70355b9e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="539c9ff2-a824-414c-b007-0f9a7d895168" testId="578e7c75-d692-1d0e-3f5f-a27b3bee43a5" testName="AddClientConnect" computerName="IGORSTARODYNOV" duration="00:00:02.0622495" startTime="2012-04-05T10:08:45.7658989+03:00" endTime="2012-04-05T10:08:48.4430520+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="539c9ff2-a824-414c-b007-0f9a7d895168">
+      <Output>
+        <DebugTrace>Listener: Listener started.
+ClientsManager: ClientManager started.
+TcpListener started on 0.0.0.0:8008.
+ClientsManager: ClientManager stopped.
+Listener: Listener stopped.
+</DebugTrace>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="49a2ef5f-569b-4672-bdf5-7efa63374e6e" testId="61f64de3-c180-b7d0-3089-accbd958bae0" testName="ServerTest" computerName="IGORSTARODYNOV" duration="00:00:00.0132110" startTime="2012-04-05T10:08:48.4560528+03:00" endTime="2012-04-05T10:08:48.4750539+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="49a2ef5f-569b-4672-bdf5-7efa63374e6e">
+      <Output>
+        <DebugTrace>ClientsManager: ClientManager started.
+Listener: Listener started.
+Server: Server started.
+ClientsManager: ClientManager stopped.
+Listener: Listener stopped.
+Server: Server stopped.
+</DebugTrace>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="2959a425-7800-4e08-9cef-fcf1cba2762a" testId="9a00b1a9-240d-1b14-bd6f-57549208136b" testName="ListenerAddClient" computerName="IGORSTARODYNOV" startTime="2012-04-05T10:08:48.5300570+03:00" endTime="2012-04-05T10:08:49.1910948+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2959a425-7800-4e08-9cef-fcf1cba2762a">
+      <Output>
+        <ErrorInfo>
+          <Message>The agent process was stopped while the test was running.</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="3601b524-c1e6-441b-a002-cfaa70355b9e" testId="cb01a2ba-6540-0c04-dd7d-8bea215d8576" testName="ServerWrongPort" computerName="IGORSTARODYNOV" duration="00:00:00.0390182" startTime="2012-04-05T10:08:49.2060957+03:00" endTime="2012-04-05T10:08:49.8321315+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3601b524-c1e6-441b-a002-cfaa70355b9e">
+    </UnitTestResult>
+  </Results>
+</TestRun>

@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="d494523b-5a97-4234-a994-41e84796bda3" name="Igor Starodynov@IGORSTARODYNOV 2012-04-05 10:00:05" runUser="IgorStarodynov\Igor Starodynov" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="12d77f06-14f5-47b2-8e32-736f99c240b8">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Igor Starodynov_IGORSTARODYNOV 2012-04-05 10_00_05">
+      <DeploymentItem filename="D:\Documents\Dropbox\Education\Visual Studio 2010\Projects\Multitier Project\apps\lib\DesktopClient.exe" />
+      <DeploymentItem filename="D:\Documents\Dropbox\Education\Visual Studio 2010\Projects\Multitier Project\apps\src\ApplicationServer\bin\Debug\ApplicationServer.exe" />
+      <DeploymentItem filename="D:\Documents\Dropbox\Education\Visual Studio 2010\Projects\Multitier Project\apps\src\ORM\bin\Debug\ORM.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-04-05T10:00:05.3711340+03:00" queuing="2012-04-05T10:00:06.0721741+03:00" start="2012-04-05T10:00:06.1861806+03:00" finish="2012-04-05T10:00:11.0094565+03:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="5" executed="5" passed="2" error="0" failed="3" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="IGORSTARODYNOV" outcome="Error" timestamp="2012-04-05T10:00:07.7992729+03:00">
+        <Text>One of the background threads threw exception: 
+System.Net.Sockets.SocketException (0x80004005): The requested address is not valid in its context
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at System.Net.Sockets.TcpListener.Start(Int32 backlog)
+   at System.Net.Sockets.TcpListener.Start()
+   at ApplicationServer.Listener.Run(Object state) in D:\Documents\Dropbox\Education\Visual Studio 2010\Projects\Multitier Project\apps\src\ApplicationServer\Listener.cs:line 39
+   at System.Threading.QueueUserWorkItemCallback.WaitCallback_Context(Object state)
+   at System.Threading.ExecutionContext.runTryCode(Object userData)
+   at System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean ignoreSyncCtx)
+   at System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
+   at System.Threading.ThreadPoolWorkQueue.Dispatch()
+   at System.Threading._ThreadPoolWaitCallback.PerformWaitCallback()</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="ServerWrongPort" storage="d:\documents\dropbox\education\visual studio 2010\projects\multitier project\apps\src\testproject\bin\debug\testproject.dll" id="cb01a2ba-6540-0c04-dd7d-8bea215d8576">
+      <Execution id="8727b45e-1559-476c-b478-0024434b4d39" />
+      <TestMethod codeBase="D:/Documents/Dropbox/Education/Visual Studio 2010/Projects/Multitier Project/apps/src/TestProject/bin/Debug/TestProject.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject.UnitTest, TestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ServerWrongPort" />
+    </UnitTest>
+    <UnitTest name="ServerWrongIP" storage="d:\documents\dropbox\education\visual studio 2010\projects\multitier project\apps\src\testproject\bin\debug\testproject.dll" id="04d9bcef-1fef-ce23-1fe3-628150698f55">
+      <Execution id="740c9005-676f-4a11-8028-a30a6d393d40" />
+      <TestMethod codeBase="D:/Documents/Dropbox/Education/Visual Studio 2010/Projects/Multitier Project/apps/src/TestProject/bin/Debug/TestProject.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject.UnitTest, TestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ServerWrongIP" />
+    </UnitTest>
+    <UnitTest name="ServerTest" storage="d:\documents\dropbox\education\visual studio 2010\projects\multitier project\apps\src\testproject\bin\debug\testproject.dll" id="61f64de3-c180-b7d0-3089-accbd958bae0">
+      <Execution id="e3854a81-649a-415d-8014-c7e70d08bcbb" />
+      <TestMethod codeBase="D:/Documents/Dropbox/Education/Visual Studio 2010/Projects/Multitier Project/apps/src/TestProject/bin/Debug/TestProject.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject.UnitTest, TestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ServerTest" />
+    </UnitTest>
+    <UnitTest name="AddClientConnect" storage="d:\documents\dropbox\education\visual studio 2010\projects\multitier project\apps\src\testproject\bin\debug\testproject.dll" id="578e7c75-d692-1d0e-3f5f-a27b3bee43a5">
+      <Execution id="28eddd86-2c42-4d91-ad3d-f476cc88d0c5" />
+      <TestMethod codeBase="D:/Documents/Dropbox/Education/Visual Studio 2010/Projects/Multitier Project/apps/src/TestProject/bin/Debug/TestProject.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject.UnitTest, TestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AddClientConnect" />
+    </UnitTest>
+    <UnitTest name="ListenerAddClient" storage="d:\documents\dropbox\education\visual studio 2010\projects\multitier project\apps\src\testproject\bin\debug\testproject.dll" id="9a00b1a9-240d-1b14-bd6f-57549208136b">
+      <Execution id="359aa38e-01f8-4437-ae80-c2458475bffa" />
+      <TestMethod codeBase="D:/Documents/Dropbox/Education/Visual Studio 2010/Projects/Multitier Project/apps/src/TestProject/bin/Debug/TestProject.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject.UnitTest, TestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ListenerAddClient" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="04d9bcef-1fef-ce23-1fe3-628150698f55" executionId="740c9005-676f-4a11-8028-a30a6d393d40" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="578e7c75-d692-1d0e-3f5f-a27b3bee43a5" executionId="28eddd86-2c42-4d91-ad3d-f476cc88d0c5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="61f64de3-c180-b7d0-3089-accbd958bae0" executionId="e3854a81-649a-415d-8014-c7e70d08bcbb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9a00b1a9-240d-1b14-bd6f-57549208136b" executionId="359aa38e-01f8-4437-ae80-c2458475bffa" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cb01a2ba-6540-0c04-dd7d-8bea215d8576" executionId="8727b45e-1559-476c-b478-0024434b4d39" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="740c9005-676f-4a11-8028-a30a6d393d40" testId="04d9bcef-1fef-ce23-1fe3-628150698f55" testName="ServerWrongIP" computerName="IGORSTARODYNOV" duration="00:00:00.0575194" startTime="2012-04-05T10:00:06.2481842+03:00" endTime="2012-04-05T10:00:07.7812719+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="740c9005-676f-4a11-8028-a30a6d393d40">
+      <Output>
+        <DebugTrace>ClientsManager: ClientManager started.
+Listener: Listener started.
+Server: Server started.
+ClientsManager: ClientManager stopped.
+Listener: Listener stopped.
+Server: Server stopped.
+ClientsManager: ClientManager stopped.
+Listener: Listener stopped.
+Server: Server stopped.
+</DebugTrace>
+        <ErrorInfo>
+          <Message>Test method TestProject.UnitTest.ServerWrongIP did not throw expected exception System.Net.Sockets.SocketException.</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="28eddd86-2c42-4d91-ad3d-f476cc88d0c5" testId="578e7c75-d692-1d0e-3f5f-a27b3bee43a5" testName="AddClientConnect" computerName="IGORSTARODYNOV" duration="00:00:00.0255093" startTime="2012-04-05T10:00:07.7992729+03:00" endTime="2012-04-05T10:00:07.8652767+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="28eddd86-2c42-4d91-ad3d-f476cc88d0c5">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method TestProject.UnitTest.AddClientConnect threw exception: 
+System.ArgumentNullException: Value cannot be null.
+Parameter name: localEP</Message>
+          <StackTrace>    at System.Net.Sockets.TcpListener..ctor(IPEndPoint localEP)
+   at ApplicationServer.Listener..ctor(IPEndPoint endPoint) in D:\Documents\Dropbox\Education\Visual Studio 2010\Projects\Multitier Project\apps\src\ApplicationServer\Listener.cs:line 15
+   at TestProject.UnitTest.AddClientConnect() in D:\Documents\Dropbox\Education\Visual Studio 2010\Projects\Multitier Project\apps\src\TestProject\UnitTest.cs:line 72
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="e3854a81-649a-415d-8014-c7e70d08bcbb" testId="61f64de3-c180-b7d0-3089-accbd958bae0" testName="ServerTest" computerName="IGORSTARODYNOV" duration="00:00:00.0007232" startTime="2012-04-05T10:00:07.9402810+03:00" endTime="2012-04-05T10:00:08.1212913+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e3854a81-649a-415d-8014-c7e70d08bcbb">
+      <Output>
+        <DebugTrace>ClientsManager: ClientManager started.
+Listener: Listener started.
+Server: Server started.
+ClientsManager: ClientManager stopped.
+Listener: Listener stopped.
+Server: Server stopped.
+</DebugTrace>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="359aa38e-01f8-4437-ae80-c2458475bffa" testId="9a00b1a9-240d-1b14-bd6f-57549208136b" testName="ListenerAddClient" computerName="IGORSTARODYNOV" duration="00:00:00.0024333" startTime="2012-04-05T10:00:08.2712999+03:00" endTime="2012-04-05T10:00:08.3123022+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="359aa38e-01f8-4437-ae80-c2458475bffa">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method TestProject.UnitTest.ListenerAddClient threw exception: 
+System.ArgumentNullException: Value cannot be null.
+Parameter name: localEP</Message>
+          <StackTrace>    at System.Net.Sockets.TcpListener..ctor(IPEndPoint localEP)
+   at ApplicationServer.Listener..ctor(IPEndPoint endPoint) in D:\Documents\Dropbox\Education\Visual Studio 2010\Projects\Multitier Project\apps\src\ApplicationServer\Listener.cs:line 15
+   at TestProject.UnitTest.ListenerAddClient() in D:\Documents\Dropbox\Education\Visual Studio 2010\Projects\Multitier Project\apps\src\TestProject\UnitTest.cs:line 59
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="8727b45e-1559-476c-b478-0024434b4d39" testId="cb01a2ba-6540-0c04-dd7d-8bea215d8576" testName="ServerWrongPort" computerName="IGORSTARODYNOV" duration="00:00:00.0007602" startTime="2012-04-05T10:00:08.3163025+03:00" endTime="2012-04-05T10:00:08.3433040+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8727b45e-1559-476c-b478-0024434b4d39">
+    </UnitTestResult>
+  </Results>
+</TestRun>

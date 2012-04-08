@@ -1,0 +1,38 @@
+<project default="ci">
+
+	<property name="configuration" value="Debug"/>
+	<property name="RootDir" value="${directory::get-current-directory()}" />
+
+	<target name="ci">
+        <call target="clean"/>
+		<call target="lib"/>
+		<call target="build"/>
+    </target>
+	
+	<target name="lib">
+		<mkdir dir="lib"/>
+		<copy file="c:/lib/Newtonsoft.Json.NET4.dll" tofile="lib/Newtonsoft.Json.dll"/>
+	</target>
+	
+	<target name="clean" >
+		<delete>
+			<fileset>
+				<include name="bin/**" />
+				<include name="test/**"/>
+				<include name="out/**"/>
+				<include name="lib/**"/>
+			</fileset>
+		</delete>
+	</target>
+
+	<loadtasks assembly="c:/Program Files/nantcontrib/bin/NAnt.Contrib.Tasks.dll"/>
+
+	
+    <target name="build" >
+		<msbuild project="${RootDir}/wclient/src/WebClient.sln">
+			<property name="Configuration" value="${configuration}" />
+			<property name="OutDir" value="${RootDir}/wclient/bin/" />
+		</msbuild>
+	</target>
+  
+</project>

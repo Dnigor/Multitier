@@ -1,0 +1,30 @@
+<Project DefaultTargets="CI"
+    xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	
+	<PropertyGroup>
+		<OutputPath>..\bin\</OutputPath>
+	</PropertyGroup>
+	
+		<Target Name="CI">
+        <CallTarget Targets="clean"/>
+		<CallTarget Targets="lib"/>
+		<CallTarget Targets="build"/>
+    </Target>
+	
+	<Target Name="lib">
+		<Copy SourceFiles="c:/lib/Newtonsoft.Json.WP7.dll" DestinationFiles="lib/Newtonsoft.Json.dll"></Copy>
+	</Target>
+	
+	<Target Name="clean" >
+		<RemoveDir Directories="bin" />
+		<RemoveDir Directories="test" />
+		<RemoveDir Directories="out" />
+		<RemoveDir Directories="src\obj" />
+	</Target>
+	
+    <Target Name="build" >
+		<MSBuild Projects="src\WPClient.sln" Properties="Configuration=Release;
+		Architecture=x86;OutputPath=$(OutputPath)"/>
+	</Target>
+  
+</Project>

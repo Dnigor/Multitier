@@ -1,0 +1,37 @@
+<Project DefaultTargets="CI"
+    xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	
+	<PropertyGroup>
+		<OutputPath>..\..\bin\</OutputPath>
+	</PropertyGroup>
+	
+	<Target Name="CI">
+        <CallTarget Targets="clean"/>
+		<CallTarget Targets="lib"/>
+		<CallTarget Targets="build"/>
+    </Target>
+	
+	<Target Name="lib">
+		<Copy SourceFiles="../aclient/bin/DesktopClient.exe" DestinationFiles="lib/DesktopClient.exe"></Copy>
+		<Copy SourceFiles="c:/lib/Newtonsoft.Json.NET4.dll" DestinationFiles="lib/Newtonsoft.Json.dll"></Copy>
+	</Target>
+	
+	<Target Name="clean" >
+		<RemoveDir Directories="bin" />
+		<RemoveDir Directories="test" />
+		<RemoveDir Directories="out" />
+		<RemoveDir Directories="lib" />
+		<RemoveDir Directories="src\ApplicationServer\obj" />
+		<RemoveDir Directories="src\ApplicationServer.Tests\obj" />
+		<RemoveDir Directories="src\ORM\obj" />
+		<RemoveDir Directories="src\ApplicationServer\bin" />
+		<RemoveDir Directories="src\ApplicationServer.Tests\bin" />
+		<RemoveDir Directories="src\ORM\bin" />
+	</Target>
+	
+    <Target Name="build" >
+		<MSBuild Projects="src\Server.sln" Properties="Configuration=Release;
+		Architecture=x86;OutputPath=$(OutputPath)"/>
+	</Target>
+  
+</Project>

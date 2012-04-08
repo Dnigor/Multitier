@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="a42c40a7-9245-4885-9e1a-f0657ca1cbcd" name="Igor Starodynov@IGORSTARODYNOV 2012-04-05 10:01:26" runUser="IgorStarodynov\Igor Starodynov" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="12d77f06-14f5-47b2-8e32-736f99c240b8">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Igor Starodynov_IGORSTARODYNOV 2012-04-05 10_01_26">
+      <DeploymentItem filename="D:\Documents\Dropbox\Education\Visual Studio 2010\Projects\Multitier Project\apps\lib\DesktopClient.exe" />
+      <DeploymentItem filename="D:\Documents\Dropbox\Education\Visual Studio 2010\Projects\Multitier Project\apps\src\ApplicationServer\bin\Debug\ApplicationServer.exe" />
+      <DeploymentItem filename="D:\Documents\Dropbox\Education\Visual Studio 2010\Projects\Multitier Project\apps\src\ORM\bin\Debug\ORM.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-04-05T10:01:26.6797846+03:00" queuing="2012-04-05T10:01:26.7917910+03:00" start="2012-04-05T10:01:27.1718128+03:00" finish="2012-04-05T10:01:29.1379252+03:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="IGORSTARODYNOV" outcome="Error" timestamp="2012-04-05T10:01:28.8549090+03:00">
+        <Text>One of the background threads threw exception: 
+System.Net.Sockets.SocketException (0x80004005): The requested address is not valid in its context
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at System.Net.Sockets.TcpListener.Start(Int32 backlog)
+   at System.Net.Sockets.TcpListener.Start()
+   at ApplicationServer.Listener.Run(Object state) in D:\Documents\Dropbox\Education\Visual Studio 2010\Projects\Multitier Project\apps\src\ApplicationServer\Listener.cs:line 39
+   at System.Threading.QueueUserWorkItemCallback.WaitCallback_Context(Object state)
+   at System.Threading.ExecutionContext.runTryCode(Object userData)
+   at System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean ignoreSyncCtx)
+   at System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
+   at System.Threading.ThreadPoolWorkQueue.Dispatch()
+   at System.Threading._ThreadPoolWaitCallback.PerformWaitCallback()</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="ServerWrongIP" storage="d:\documents\dropbox\education\visual studio 2010\projects\multitier project\apps\src\testproject\bin\debug\testproject.dll" id="04d9bcef-1fef-ce23-1fe3-628150698f55">
+      <Execution id="0bdd6063-80c2-4a76-840c-8a32176219f8" />
+      <TestMethod codeBase="D:/Documents/Dropbox/Education/Visual Studio 2010/Projects/Multitier Project/apps/src/TestProject/bin/Debug/TestProject.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject.UnitTest, TestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ServerWrongIP" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="04d9bcef-1fef-ce23-1fe3-628150698f55" executionId="0bdd6063-80c2-4a76-840c-8a32176219f8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="0bdd6063-80c2-4a76-840c-8a32176219f8" testId="04d9bcef-1fef-ce23-1fe3-628150698f55" testName="ServerWrongIP" computerName="IGORSTARODYNOV" duration="00:00:00.0529654" startTime="2012-04-05T10:01:27.2148152+03:00" endTime="2012-04-05T10:01:28.8889110+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0bdd6063-80c2-4a76-840c-8a32176219f8">
+      <Output>
+        <DebugTrace>ClientsManager: ClientManager started.
+Listener: Listener started.
+Server: Server started.
+ClientsManager: ClientManager stopped.
+Listener: Listener stopped.
+Server: Server stopped.
+ClientsManager: ClientManager stopped.
+Listener: Listener stopped.
+Server: Server stopped.
+</DebugTrace>
+        <ErrorInfo>
+          <Message>Test method TestProject.UnitTest.ServerWrongIP did not throw expected exception System.Net.Sockets.SocketException.</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

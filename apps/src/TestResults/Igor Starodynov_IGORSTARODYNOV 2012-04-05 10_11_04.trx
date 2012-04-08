@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="79612ddc-f150-4807-b10a-1327086dc62d" name="Igor Starodynov@IGORSTARODYNOV 2012-04-05 10:11:04" runUser="IgorStarodynov\Igor Starodynov" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="12d77f06-14f5-47b2-8e32-736f99c240b8">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Igor Starodynov_IGORSTARODYNOV 2012-04-05 10_11_04">
+      <DeploymentItem filename="D:\Documents\Dropbox\Education\Visual Studio 2010\Projects\Multitier Project\apps\lib\DesktopClient.exe" />
+      <DeploymentItem filename="D:\Documents\Dropbox\Education\Visual Studio 2010\Projects\Multitier Project\apps\src\ApplicationServer\bin\Debug\ApplicationServer.exe" />
+      <DeploymentItem filename="D:\Documents\Dropbox\Education\Visual Studio 2010\Projects\Multitier Project\apps\src\ORM\bin\Debug\ORM.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-04-05T10:11:04.8208524+03:00" queuing="2012-04-05T10:11:04.9448595+03:00" start="2012-04-05T10:11:05.0988683+03:00" finish="2012-04-05T10:11:10.6601864+03:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="4" executed="4" passed="4" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="ServerWrongPort" storage="d:\documents\dropbox\education\visual studio 2010\projects\multitier project\apps\src\testproject\bin\debug\testproject.dll" id="cb01a2ba-6540-0c04-dd7d-8bea215d8576">
+      <Execution id="930e37ef-eb8c-45f7-a70b-fc8ca69b0b64" />
+      <TestMethod codeBase="D:/Documents/Dropbox/Education/Visual Studio 2010/Projects/Multitier Project/apps/src/TestProject/bin/Debug/TestProject.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject.UnitTest, TestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ServerWrongPort" />
+    </UnitTest>
+    <UnitTest name="ListenerAddClient" storage="d:\documents\dropbox\education\visual studio 2010\projects\multitier project\apps\src\testproject\bin\debug\testproject.dll" id="9a00b1a9-240d-1b14-bd6f-57549208136b">
+      <Execution id="a813eb65-bd95-4c07-92d8-5672ffbcd8f8" />
+      <TestMethod codeBase="D:/Documents/Dropbox/Education/Visual Studio 2010/Projects/Multitier Project/apps/src/TestProject/bin/Debug/TestProject.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject.UnitTest, TestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ListenerAddClient" />
+    </UnitTest>
+    <UnitTest name="ServerTest" storage="d:\documents\dropbox\education\visual studio 2010\projects\multitier project\apps\src\testproject\bin\debug\testproject.dll" id="61f64de3-c180-b7d0-3089-accbd958bae0">
+      <Execution id="adf412c0-9e46-4b12-a033-2aae4fd5c31b" />
+      <TestMethod codeBase="D:/Documents/Dropbox/Education/Visual Studio 2010/Projects/Multitier Project/apps/src/TestProject/bin/Debug/TestProject.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject.UnitTest, TestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ServerTest" />
+    </UnitTest>
+    <UnitTest name="AddClientConnect" storage="d:\documents\dropbox\education\visual studio 2010\projects\multitier project\apps\src\testproject\bin\debug\testproject.dll" id="578e7c75-d692-1d0e-3f5f-a27b3bee43a5">
+      <Execution id="1fed93b6-8453-491f-b31a-903a4c4b9281" />
+      <TestMethod codeBase="D:/Documents/Dropbox/Education/Visual Studio 2010/Projects/Multitier Project/apps/src/TestProject/bin/Debug/TestProject.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject.UnitTest, TestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AddClientConnect" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="578e7c75-d692-1d0e-3f5f-a27b3bee43a5" executionId="1fed93b6-8453-491f-b31a-903a4c4b9281" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="61f64de3-c180-b7d0-3089-accbd958bae0" executionId="adf412c0-9e46-4b12-a033-2aae4fd5c31b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9a00b1a9-240d-1b14-bd6f-57549208136b" executionId="a813eb65-bd95-4c07-92d8-5672ffbcd8f8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cb01a2ba-6540-0c04-dd7d-8bea215d8576" executionId="930e37ef-eb8c-45f7-a70b-fc8ca69b0b64" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="1fed93b6-8453-491f-b31a-903a4c4b9281" testId="578e7c75-d692-1d0e-3f5f-a27b3bee43a5" testName="AddClientConnect" computerName="IGORSTARODYNOV" duration="00:00:02.2020779" startTime="2012-04-05T10:11:05.1178694+03:00" endTime="2012-04-05T10:11:08.2780501+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1fed93b6-8453-491f-b31a-903a4c4b9281">
+      <Output>
+        <DebugTrace>Listener: Listener started.
+ClientsManager: ClientManager started.
+TcpListener started on 0.0.0.0:8008.
+ClientsManager: ClientManager stopped.
+Listener: Listener stopped.
+Listener: Exception maessage. A blocking operation was interrupted by a call to WSACancelBlockingCall
+</DebugTrace>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="adf412c0-9e46-4b12-a033-2aae4fd5c31b" testId="61f64de3-c180-b7d0-3089-accbd958bae0" testName="ServerTest" computerName="IGORSTARODYNOV" duration="00:00:01.0468611" startTime="2012-04-05T10:11:08.2860506+03:00" endTime="2012-04-05T10:11:09.3461112+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="adf412c0-9e46-4b12-a033-2aae4fd5c31b">
+      <Output>
+        <DebugTrace>ClientsManager: ClientManager started.
+Listener: Listener started.
+Server: Server started.
+TcpListener started on 0.0.0.0:8888.
+ClientsManager: ClientManager stopped.
+Listener: Listener stopped.
+Server: Server stopped.
+</DebugTrace>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a813eb65-bd95-4c07-92d8-5672ffbcd8f8" testId="9a00b1a9-240d-1b14-bd6f-57549208136b" testName="ListenerAddClient" computerName="IGORSTARODYNOV" duration="00:00:01.0111645" startTime="2012-04-05T10:11:09.3481113+03:00" endTime="2012-04-05T10:11:10.3711698+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a813eb65-bd95-4c07-92d8-5672ffbcd8f8">
+      <Output>
+        <DebugTrace>Listener: Listener started.
+TcpListener started on 0.0.0.0:8008.
+Listener: Listener stopped.
+</DebugTrace>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="930e37ef-eb8c-45f7-a70b-fc8ca69b0b64" testId="cb01a2ba-6540-0c04-dd7d-8bea215d8576" testName="ServerWrongPort" computerName="IGORSTARODYNOV" duration="00:00:00.0037446" startTime="2012-04-05T10:11:10.3871708+03:00" endTime="2012-04-05T10:11:10.4031717+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="930e37ef-eb8c-45f7-a70b-fc8ca69b0b64">
+    </UnitTestResult>
+  </Results>
+</TestRun>
