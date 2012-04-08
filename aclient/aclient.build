@@ -1,7 +1,7 @@
 <project default="ci">
 
 	<property name="configuration" value="Debug"/>
-	<property name="RootDir" value="${directory::get-current-directory()}" />
+	<property name="RootDir" value="c:/projects/multitier" />
 
 	<target name="ci">
         <call target="clean"/>

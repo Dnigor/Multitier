@@ -2,7 +2,7 @@
 	<target name="ci">
 		<nant>
 			<buildfiles>
-				<include name="c:/projects/multitier/aclient/aclient.build" />
+				<include name="aclient/aclient.build" />
 				<include name="apps/server.build" />
 			<!--	<include name="mclient/mclient.build" />  -->
 				<include name="wclient/wclient.build" />
