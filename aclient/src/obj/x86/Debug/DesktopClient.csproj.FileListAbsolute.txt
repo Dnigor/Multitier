@@ -1,0 +1,13 @@
+c:\projects\multitier\aclient\bin\DesktopClient.exe
+c:\projects\multitier\aclient\bin\DesktopClient.pdb
+c:\projects\multitier\aclient\src\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\projects\multitier\aclient\src\obj\x86\Debug\MainWindow.baml
+c:\projects\multitier\aclient\src\obj\x86\Debug\MainWindow.g.cs
+c:\projects\multitier\aclient\src\obj\x86\Debug\App.g.cs
+c:\projects\multitier\aclient\src\obj\x86\Debug\DesktopClient_MarkupCompile.cache
+c:\projects\multitier\aclient\src\obj\x86\Debug\DesktopClient.g.resources
+c:\projects\multitier\aclient\src\obj\x86\Debug\DesktopClient.Properties.Resources.resources
+c:\projects\multitier\aclient\src\obj\x86\Debug\GenerateResource.read.1.tlog
+c:\projects\multitier\aclient\src\obj\x86\Debug\GenerateResource.write.1.tlog
+c:\projects\multitier\aclient\src\obj\x86\Debug\DesktopClient.exe
+c:\projects\multitier\aclient\src\obj\x86\Debug\DesktopClient.pdb

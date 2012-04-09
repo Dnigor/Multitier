@@ -42,8 +42,7 @@
 		<mkdir dir="${RootDir}/aclient/out/"/>
 		
 		<exec program="C:/Program Files/Microsoft Fxcop 10.0/fxcopcmd" commandline="/file:${RootDir}\aclient\bin\desktopclient.exe /out:${RootDir}\aclient\out\fxcop.xml"/>
-	<!--	<exec program="C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\Metrics.exe" commandline= "/file:bin/${basename}-??.exe /out:out/metrics.xml"/> 
--->
+		<exec program="C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\Metrics.exe" commandline="/file:${RootDir}\aclient\bin\desktopclient.exe /out:${RootDir}\aclient\out\metrics.xml"/> 
 	</target>
 
   

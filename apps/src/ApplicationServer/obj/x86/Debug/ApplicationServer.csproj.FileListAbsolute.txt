@@ -1,1 +1,2 @@
 C:\Multitier\apps\src\ApplicationServer\bin\Debug\ApplicationServer.exe.config
+c:\projects\Multitier\apps\src\ApplicationServer\bin\Debug\ApplicationServer.exe.config
